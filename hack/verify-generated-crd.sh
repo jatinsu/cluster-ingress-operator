@@ -45,3 +45,7 @@ verify_crd \
 verify_crd \
   "vendor/github.com/openshift/api/operatoringress/v1/zz_generated.crd-manifests/0000_50_dns_01_dnsrecords.crd.yaml" \
   "manifests/00-custom-resource-definition-internal.yaml"
+
+verify_crd \
+  "vendor/github.com/openshift/api/operator/v1/zz_generated.crd-manifests/0000_50_ingress_00_ingresscontrollers-OKD.crd.yaml" \
+  "manifests/00-custom-resource-definition-OKD.yaml"
